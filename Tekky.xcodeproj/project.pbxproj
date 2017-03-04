@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F97C32D1E6A6F060030E861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C32C1E6A6F060030E861 /* AppDelegate.swift */; };
+		3F97C32F1E6A6F060030E861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C32E1E6A6F060030E861 /* Assets.xcassets */; };
+		3F97C3321E6A6F060030E861 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C3301E6A6F060030E861 /* MainMenu.xib */; };
+		3F97C33D1E6A6F060030E861 /* TekkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C33C1E6A6F060030E861 /* TekkyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F97C3391E6A6F060030E861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F97C3211E6A6F050030E861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F97C3281E6A6F050030E861;
+			remoteInfo = Tekky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F97C3291E6A6F060030E861 /* Tekky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tekky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F97C32C1E6A6F060030E861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F97C32E1E6A6F060030E861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F97C3311E6A6F060030E861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3F97C3331E6A6F060030E861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F97C3381E6A6F060030E861 /* TekkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TekkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F97C33C1E6A6F060030E861 /* TekkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkyUITests.swift; sourceTree = "<group>"; };
+		3F97C33E1E6A6F060030E861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F97C3261E6A6F050030E861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F97C3351E6A6F060030E861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F97C3201E6A6F050030E861 = {
+			isa = PBXGroup;
+			children = (
+				3F97C32B1E6A6F060030E861 /* Tekky */,
+				3F97C33B1E6A6F060030E861 /* TekkyUITests */,
+				3F97C32A1E6A6F060030E861 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F97C32A1E6A6F060030E861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C3291E6A6F060030E861 /* Tekky.app */,
+				3F97C3381E6A6F060030E861 /* TekkyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F97C32B1E6A6F060030E861 /* Tekky */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C32C1E6A6F060030E861 /* AppDelegate.swift */,
+				3F97C32E1E6A6F060030E861 /* Assets.xcassets */,
+				3F97C3301E6A6F060030E861 /* MainMenu.xib */,
+				3F97C3331E6A6F060030E861 /* Info.plist */,
+			);
+			path = Tekky;
+			sourceTree = "<group>";
+		};
+		3F97C33B1E6A6F060030E861 /* TekkyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C33C1E6A6F060030E861 /* TekkyUITests.swift */,
+				3F97C33E1E6A6F060030E861 /* Info.plist */,
+			);
+			path = TekkyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F97C3281E6A6F050030E861 /* Tekky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F97C3411E6A6F060030E861 /* Build configuration list for PBXNativeTarget "Tekky" */;
+			buildPhases = (
+				3F97C3251E6A6F050030E861 /* Sources */,
+				3F97C3261E6A6F050030E861 /* Frameworks */,
+				3F97C3271E6A6F050030E861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tekky;
+			productName = Tekky;
+			productReference = 3F97C3291E6A6F060030E861 /* Tekky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F97C3371E6A6F060030E861 /* TekkyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F97C3441E6A6F060030E861 /* Build configuration list for PBXNativeTarget "TekkyUITests" */;
+			buildPhases = (
+				3F97C3341E6A6F060030E861 /* Sources */,
+				3F97C3351E6A6F060030E861 /* Frameworks */,
+				3F97C3361E6A6F060030E861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F97C33A1E6A6F060030E861 /* PBXTargetDependency */,
+			);
+			name = TekkyUITests;
+			productName = TekkyUITests;
+			productReference = 3F97C3381E6A6F060030E861 /* TekkyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F97C3211E6A6F050030E861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jeremy Rea";
+				TargetAttributes = {
+					3F97C3281E6A6F050030E861 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XN83SCYFG2;
+						ProvisioningStyle = Automatic;
+					};
+					3F97C3371E6A6F060030E861 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XN83SCYFG2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F97C3281E6A6F050030E861;
+					};
+				};
+			};
+			buildConfigurationList = 3F97C3241E6A6F050030E861 /* Build configuration list for PBXProject "Tekky" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F97C3201E6A6F050030E861;
+			productRefGroup = 3F97C32A1E6A6F060030E861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F97C3281E6A6F050030E861 /* Tekky */,
+				3F97C3371E6A6F060030E861 /* TekkyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F97C3271E6A6F050030E861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F97C32F1E6A6F060030E861 /* Assets.xcassets in Resources */,
+				3F97C3321E6A6F060030E861 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F97C3361E6A6F060030E861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F97C3251E6A6F050030E861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F97C32D1E6A6F060030E861 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F97C3341E6A6F060030E861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F97C33D1E6A6F060030E861 /* TekkyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F97C33A1E6A6F060030E861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F97C3281E6A6F050030E861 /* Tekky */;
+			targetProxy = 3F97C3391E6A6F060030E861 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F97C3301E6A6F060030E861 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F97C3311E6A6F060030E861 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F97C33F1E6A6F060030E861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F97C3401E6A6F060030E861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		3F97C3421E6A6F060030E861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XN83SCYFG2;
+				INFOPLIST_FILE = Tekky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremyrea.Tekky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F97C3431E6A6F060030E861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XN83SCYFG2;
+				INFOPLIST_FILE = Tekky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremyrea.Tekky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3F97C3451E6A6F060030E861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XN83SCYFG2;
+				INFOPLIST_FILE = TekkyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremyrea.TekkyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tekky;
+			};
+			name = Debug;
+		};
+		3F97C3461E6A6F060030E861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XN83SCYFG2;
+				INFOPLIST_FILE = TekkyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremyrea.TekkyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tekky;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F97C3241E6A6F050030E861 /* Build configuration list for PBXProject "Tekky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F97C33F1E6A6F060030E861 /* Debug */,
+				3F97C3401E6A6F060030E861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F97C3411E6A6F060030E861 /* Build configuration list for PBXNativeTarget "Tekky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F97C3421E6A6F060030E861 /* Debug */,
+				3F97C3431E6A6F060030E861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F97C3441E6A6F060030E861 /* Build configuration list for PBXNativeTarget "TekkyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F97C3451E6A6F060030E861 /* Debug */,
+				3F97C3461E6A6F060030E861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F97C3211E6A6F050030E861 /* Project object */;
+}
