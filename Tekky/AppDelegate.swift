@@ -11,11 +11,15 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-  @IBOutlet weak var window: NSWindow!
-
+  @IBOutlet var statusMenu: NSMenu?
+  @IBOutlet var statusItem: NSStatusItem?
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-    // Insert code here to initialize your application
+    statusItem = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
+    statusItem?.length = NSVariableStatusItemLength
+    statusItem?.menu = statusMenu
+    statusItem?.title = "Tekky"
+    statusItem?.highlightMode = true
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {
