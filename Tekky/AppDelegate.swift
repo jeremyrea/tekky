@@ -17,9 +17,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     statusItem = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
     statusItem?.length = NSVariableStatusItemLength
-    statusItem?.menu = statusMenu
     statusItem?.title = "Tekky"
     statusItem?.highlightMode = true
+
+    statusMenu = NSMenu()
+    statusMenu?.addItem(NSMenuItem(title: "Usage...", action: nil, keyEquivalent: String()))
+    statusMenu?.addItem(NSMenuItem.separator())
+    statusMenu?.addItem(NSMenuItem(title: "Preferences", action: nil, keyEquivalent: String()))
+
+    statusItem?.menu = statusMenu
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {

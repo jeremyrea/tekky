@@ -14,25 +14,5 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Tekky" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <menu id="zDy-me-0AP">
-            <items>
-                <menuItem title="Item" id="BR7-pc-mb7">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item" id="ujF-bp-UsM">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <binding destination="Voe-Tx-rLC" name="value" keyPath="self.statusMenu" id="web-W4-fno"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Item" id="DOq-ID-ZXW">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-            </items>
-            <connections>
-                <binding destination="Voe-Tx-rLC" name="font" keyPath="self.statusMenu" id="9Qk-Xh-fCr"/>
-            </connections>
-            <point key="canvasLocation" x="58" y="125"/>
-        </menu>
     </objects>
 </document>
