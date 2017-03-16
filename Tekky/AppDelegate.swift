@@ -11,7 +11,7 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-  @IBOutlet weak var preferencesWindow: NSWindow!
+  @IBOutlet weak var preferences: Preferences!
   @IBOutlet var statusMenu: NSMenu?
   @IBOutlet var statusItem: NSStatusItem?
 
@@ -22,9 +22,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusItem?.highlightMode = true
 
     statusMenu = NSMenu()
-    statusMenu?.addItem(NSMenuItem(title: "Usage...", action: nil, keyEquivalent: String()))
+    statusMenu?.addItem(NSMenuItem(title: "Usage...",
+                                   action: nil,
+                                   keyEquivalent: String()))
     statusMenu?.addItem(NSMenuItem.separator())
-    statusMenu?.addItem(NSMenuItem(title: "Preferences", action: #selector(AppDelegate.displayPreferences), keyEquivalent: ","))
+    statusMenu?.addItem(NSMenuItem(title: "Preferences",
+                                   action: #selector(AppDelegate.displayPreferences),
+                                   keyEquivalent: ","))
 
     statusItem?.menu = statusMenu
   }
@@ -34,7 +38,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 
   @objc func displayPreferences() {
-    preferencesWindow.makeKeyAndOrderFront(preferencesWindow)
+    preferences.setup()
+    preferences.makeKeyAndOrderFront(preferences)
     NSApp.activate(ignoringOtherApps: true)
   }
 }

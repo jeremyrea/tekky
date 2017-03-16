@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F416C191E6C910E0039BCE6 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F416C181E6C910E0039BCE6 /* PreferencesController.swift */; };
+		3F416C1B1E6C917A0039BCE6 /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F416C1A1E6C917A0039BCE6 /* Preferences.plist */; };
 		3F97C32D1E6A6F060030E861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C32C1E6A6F060030E861 /* AppDelegate.swift */; };
 		3F97C32F1E6A6F060030E861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C32E1E6A6F060030E861 /* Assets.xcassets */; };
 		3F97C3321E6A6F060030E861 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C3301E6A6F060030E861 /* MainMenu.xib */; };
 		3F97C33D1E6A6F060030E861 /* TekkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C33C1E6A6F060030E861 /* TekkyUITests.swift */; };
+		3FBB9B2E1E6B0BA700F849A1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBB9B2A1E6B0BA700F849A1 /* RxCocoa.framework */; };
+		3FBB9B2F1E6B0BA700F849A1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBB9B2B1E6B0BA700F849A1 /* RxSwift.framework */; };
+		3FBB9B361E6B0BF500F849A1 /* RxBlocking.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FBB9B321E6B0BF500F849A1 /* RxBlocking.framework.dSYM */; };
+		3FBB9B371E6B0BF500F849A1 /* RxCocoa.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FBB9B331E6B0BF500F849A1 /* RxCocoa.framework.dSYM */; };
+		3FBB9B381E6B0BF500F849A1 /* RxSwift.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FBB9B341E6B0BF500F849A1 /* RxSwift.framework.dSYM */; };
+		3FBB9B391E6B0BF500F849A1 /* RxTest.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FBB9B351E6B0BF500F849A1 /* RxTest.framework.dSYM */; };
+		3FBB9B3C1E6B0CBB00F849A1 /* RxCocoa.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB9B3A1E6B0CBB00F849A1 /* RxCocoa.framework.dSYM */; };
+		3FBB9B3D1E6B0CBB00F849A1 /* RxSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB9B3B1E6B0CBB00F849A1 /* RxSwift.framework.dSYM */; };
+		3FBB9B431E6B0D5C00F849A1 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FBB9B411E6B0D5C00F849A1 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FBB9B441E6B0D5C00F849A1 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FBB9B421E6B0D5C00F849A1 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +35,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3FBB9B311E6B0BE800F849A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				3FBB9B361E6B0BF500F849A1 /* RxBlocking.framework.dSYM in CopyFiles */,
+				3FBB9B371E6B0BF500F849A1 /* RxCocoa.framework.dSYM in CopyFiles */,
+				3FBB9B381E6B0BF500F849A1 /* RxSwift.framework.dSYM in CopyFiles */,
+				3FBB9B391E6B0BF500F849A1 /* RxTest.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBB9B401E6B0D4500F849A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3FBB9B431E6B0D5C00F849A1 /* RxCocoa.framework in CopyFiles */,
+				3FBB9B441E6B0D5C00F849A1 /* RxSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F416C181E6C910E0039BCE6 /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
+		3F416C1A1E6C917A0039BCE6 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
 		3F97C3291E6A6F060030E861 /* Tekky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tekky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F97C32C1E6A6F060030E861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F97C32E1E6A6F060030E861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +73,18 @@
 		3F97C3381E6A6F060030E861 /* TekkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TekkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F97C33C1E6A6F060030E861 /* TekkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkyUITests.swift; sourceTree = "<group>"; };
 		3F97C33E1E6A6F060030E861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBB9B291E6B0BA700F849A1 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
+		3FBB9B2A1E6B0BA700F849A1 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		3FBB9B2B1E6B0BA700F849A1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		3FBB9B2C1E6B0BA700F849A1 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/Mac/RxTest.framework; sourceTree = "<group>"; };
+		3FBB9B321E6B0BF500F849A1 /* RxBlocking.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxBlocking.framework.dSYM; path = Carthage/Build/Mac/RxBlocking.framework.dSYM; sourceTree = "<group>"; };
+		3FBB9B331E6B0BF500F849A1 /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
+		3FBB9B341E6B0BF500F849A1 /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
+		3FBB9B351E6B0BF500F849A1 /* RxTest.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxTest.framework.dSYM; path = Carthage/Build/Mac/RxTest.framework.dSYM; sourceTree = "<group>"; };
+		3FBB9B3A1E6B0CBB00F849A1 /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/Mac/RxCocoa.framework.dSYM; sourceTree = "<group>"; };
+		3FBB9B3B1E6B0CBB00F849A1 /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/Mac/RxSwift.framework.dSYM; sourceTree = "<group>"; };
+		3FBB9B411E6B0D5C00F849A1 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		3FBB9B421E6B0D5C00F849A1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBB9B2E1E6B0BA700F849A1 /* RxCocoa.framework in Frameworks */,
+				3FBB9B2F1E6B0BA700F849A1 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +107,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F416C171E6C90F20039BCE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F416C181E6C910E0039BCE6 /* PreferencesController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		3F97C3201E6A6F050030E861 = {
 			isa = PBXGroup;
 			children = (
 				3F97C32B1E6A6F060030E861 /* Tekky */,
 				3F97C33B1E6A6F060030E861 /* TekkyUITests */,
 				3F97C32A1E6A6F060030E861 /* Products */,
+				3FBB9B281E6B0BA700F849A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +138,11 @@
 			isa = PBXGroup;
 			children = (
 				3F97C32C1E6A6F060030E861 /* AppDelegate.swift */,
+				3F416C171E6C90F20039BCE6 /* Controller */,
 				3F97C32E1E6A6F060030E861 /* Assets.xcassets */,
 				3F97C3301E6A6F060030E861 /* MainMenu.xib */,
 				3F97C3331E6A6F060030E861 /* Info.plist */,
+				3F416C1A1E6C917A0039BCE6 /* Preferences.plist */,
 			);
 			path = Tekky;
 			sourceTree = "<group>";
@@ -90,6 +156,25 @@
 			path = TekkyUITests;
 			sourceTree = "<group>";
 		};
+		3FBB9B281E6B0BA700F849A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBB9B411E6B0D5C00F849A1 /* RxCocoa.framework */,
+				3FBB9B421E6B0D5C00F849A1 /* RxSwift.framework */,
+				3FBB9B3A1E6B0CBB00F849A1 /* RxCocoa.framework.dSYM */,
+				3FBB9B3B1E6B0CBB00F849A1 /* RxSwift.framework.dSYM */,
+				3FBB9B321E6B0BF500F849A1 /* RxBlocking.framework.dSYM */,
+				3FBB9B331E6B0BF500F849A1 /* RxCocoa.framework.dSYM */,
+				3FBB9B341E6B0BF500F849A1 /* RxSwift.framework.dSYM */,
+				3FBB9B351E6B0BF500F849A1 /* RxTest.framework.dSYM */,
+				3FBB9B291E6B0BA700F849A1 /* RxBlocking.framework */,
+				3FBB9B2A1E6B0BA700F849A1 /* RxCocoa.framework */,
+				3FBB9B2B1E6B0BA700F849A1 /* RxSwift.framework */,
+				3FBB9B2C1E6B0BA700F849A1 /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +185,10 @@
 				3F97C3251E6A6F050030E861 /* Sources */,
 				3F97C3261E6A6F050030E861 /* Frameworks */,
 				3F97C3271E6A6F050030E861 /* Resources */,
+				3FBB9B261E6B0AD700F849A1 /* ShellScript */,
+				3FBB9B271E6B0AFE00F849A1 /* ShellScript */,
+				3FBB9B311E6B0BE800F849A1 /* CopyFiles */,
+				3FBB9B401E6B0D4500F849A1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -177,6 +266,9 @@
 			files = (
 				3F97C32F1E6A6F060030E861 /* Assets.xcassets in Resources */,
 				3F97C3321E6A6F060030E861 /* MainMenu.xib in Resources */,
+				3F416C1B1E6C917A0039BCE6 /* Preferences.plist in Resources */,
+				3FBB9B3C1E6B0CBB00F849A1 /* RxCocoa.framework.dSYM in Resources */,
+				3FBB9B3D1E6B0CBB00F849A1 /* RxSwift.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +281,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FBB9B261E6B0AD700F849A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		3FBB9B271E6B0AFE00F849A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F97C3251E6A6F050030E861 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F416C191E6C910E0039BCE6 /* PreferencesController.swift in Sources */,
 				3F97C32D1E6A6F060030E861 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +446,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XN83SCYFG2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Tekky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremyrea.Tekky;
@@ -338,6 +464,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XN83SCYFG2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Tekky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremyrea.Tekky;
@@ -395,6 +525,7 @@
 				3F97C3431E6A6F060030E861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F97C3441E6A6F060030E861 /* Build configuration list for PBXNativeTarget "TekkyUITests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +534,7 @@
 				3F97C3461E6A6F060030E861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
