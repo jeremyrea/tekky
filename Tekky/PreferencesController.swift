@@ -16,7 +16,17 @@ class Preferences: NSWindow {
 
   private let plistfile = "Preferences.plist"
 
-  @IBOutlet var apiField: NSTextField?
+  @IBOutlet fileprivate var apiField: NSTextField?
+
+  override func orderFront(_ sender: Any?) {
+    setup()
+    orderFront(sender)
+  }
+
+  override func orderOut(_ sender: Any?) {
+    saveSetting(.apiKey, withValue: apiField?.stringValue as AnyObject)
+    super.orderOut(sender)
+  }
 
   func setup() {
     let fileManager = (FileManager.default)
@@ -33,7 +43,7 @@ class Preferences: NSWindow {
     apiField?.stringValue = getSetting(.apiKey) as? String ?? "No key found"
   }
 
-  func getSetting(_ key: Preferences) -> AnyObject? {
+  private func getSetting(_ key: Preferences) -> AnyObject? {
     let fileManager = (FileManager.default)
     let directories = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true) as [String]?
 
@@ -50,7 +60,7 @@ class Preferences: NSWindow {
     return nil
   }
 
-  func saveSetting(_ key: Preferences, withValue value: AnyObject) {
+  fileprivate func saveSetting(_ key: Preferences, withValue value: AnyObject) {
     let fileManager = (FileManager.default)
     let directories: [String]? = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
 
