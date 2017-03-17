@@ -61,7 +61,7 @@ class Preferences: NSWindow {
     return nil
   }
 
-  fileprivate func saveSetting(_ key: Preferences, withValue value: AnyObject) {
+  private func saveSetting(_ key: Preferences, withValue value: AnyObject) {
     let fileManager = (FileManager.default)
     let directories: [String]? = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true) as [String]?
 
@@ -80,8 +80,8 @@ class Preferences: NSWindow {
 
   private func initializePreferences(atPath plistpath: String) {
     let preferencesDictionary = NSMutableDictionary()
-    preferencesDictionary.setValue(0, forKey: Preferences.bandwidthLimit.rawValue)
-    preferencesDictionary.setValue("DemoKey", forKey: Preferences.apiKey.rawValue)
+    preferencesDictionary.setValue(0, forKey: bandwidthLimit.rawValue)
+    preferencesDictionary.setValue("", forKey: apiKey.rawValue)
     preferencesDictionary.write(toFile: plistpath, atomically: true)
   }
 }
