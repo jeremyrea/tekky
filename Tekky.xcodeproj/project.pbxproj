@@ -10,6 +10,7 @@
 		3F416C191E6C910E0039BCE6 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F416C181E6C910E0039BCE6 /* PreferencesController.swift */; };
 		3F416C1B1E6C917A0039BCE6 /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F416C1A1E6C917A0039BCE6 /* Preferences.plist */; };
 		3F63FD261E7B6C5A00CB37AA /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63FD251E7B6C5A00CB37AA /* InputTextField.swift */; };
+		3F63FD2A1E7B770F00CB37AA /* DigitOnlyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63FD291E7B770F00CB37AA /* DigitOnlyFormatter.swift */; };
 		3F97C32D1E6A6F060030E861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C32C1E6A6F060030E861 /* AppDelegate.swift */; };
 		3F97C32F1E6A6F060030E861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C32E1E6A6F060030E861 /* Assets.xcassets */; };
 		3F97C3321E6A6F060030E861 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C3301E6A6F060030E861 /* MainMenu.xib */; };
@@ -68,6 +69,7 @@
 		3F416C1A1E6C917A0039BCE6 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
 		3F63FD251E7B6C5A00CB37AA /* InputTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		3F63FD271E7B729300CB37AA /* Tekky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tekky.entitlements; sourceTree = "<group>"; };
+		3F63FD291E7B770F00CB37AA /* DigitOnlyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitOnlyFormatter.swift; sourceTree = "<group>"; };
 		3F97C3291E6A6F060030E861 /* Tekky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tekky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F97C32C1E6A6F060030E861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F97C32E1E6A6F060030E861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		3F63FD281E7B76BA00CB37AA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3F63FD291E7B770F00CB37AA /* DigitOnlyFormatter.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		3F97C3201E6A6F050030E861 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 				3F63FD271E7B729300CB37AA /* Tekky.entitlements */,
 				3F97C32C1E6A6F060030E861 /* AppDelegate.swift */,
 				3F416C171E6C90F20039BCE6 /* Controller */,
+				3F63FD281E7B76BA00CB37AA /* Utility */,
 				3F63FD241E7B6C3E00CB37AA /* View */,
 				3F97C32E1E6A6F060030E861 /* Assets.xcassets */,
 				3F97C3301E6A6F060030E861 /* MainMenu.xib */,
@@ -335,6 +346,7 @@
 			files = (
 				3F416C191E6C910E0039BCE6 /* PreferencesController.swift in Sources */,
 				3F63FD261E7B6C5A00CB37AA /* InputTextField.swift in Sources */,
+				3F63FD2A1E7B770F00CB37AA /* DigitOnlyFormatter.swift in Sources */,
 				3F97C32D1E6A6F060030E861 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,7 +27,8 @@ class Preferences: NSWindow {
 
   func setup() {
     let fileManager = (FileManager.default)
-    let directories: [String]? = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
+    let directories = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true) as [String]?
+
     if let unwrap = directories {
       let dictionary = unwrap[0]
       let plistpath = dictionary + ("/" + plistfile)
@@ -39,6 +40,8 @@ class Preferences: NSWindow {
 
     apiField?.stringValue = getSetting(.apiKey) as? String ?? "No key found"
     bandwidthField?.stringValue = getSetting(.bandwidthLimit) as? String ?? ""
+
+    bandwidthField?.formatter = DigitOnlyFormatter()
   }
 
   private func getSetting(_ key: Preferences) -> AnyObject? {
@@ -60,7 +63,7 @@ class Preferences: NSWindow {
 
   fileprivate func saveSetting(_ key: Preferences, withValue value: AnyObject) {
     let fileManager = (FileManager.default)
-    let directories: [String]? = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
+    let directories: [String]? = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true) as [String]?
 
     if let unwrap = directories {
       let dictionary = unwrap[0]
