@@ -16,15 +16,17 @@ class Preferences: NSWindow {
 
   private let plistfile = "Preferences.plist"
 
-  @IBOutlet fileprivate var apiField: NSTextField?
+  @IBOutlet private var apiField: NSTextField?
+  @IBOutlet private var bandwidthField: NSTextField?
 
   override func orderFront(_ sender: Any?) {
     setup()
-    orderFront(sender)
+    super.orderFront(sender)
   }
 
   override func orderOut(_ sender: Any?) {
     saveSetting(.apiKey, withValue: apiField?.stringValue as AnyObject)
+    saveSetting(.bandwidthLimit, withValue: bandwidthField?.stringValue as AnyObject)
     super.orderOut(sender)
   }
 
@@ -41,6 +43,7 @@ class Preferences: NSWindow {
     }
 
     apiField?.stringValue = getSetting(.apiKey) as? String ?? "No key found"
+    bandwidthField?.stringValue = getSetting(.bandwidthLimit) as? String ?? ""
   }
 
   private func getSetting(_ key: Preferences) -> AnyObject? {
