@@ -22,15 +22,16 @@
         <userDefaultsController representsSharedInstance="YES" id="vhb-hV-Pkd"/>
         <objectController id="JdF-Tk-KmH"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="sm8-an-qUS" customClass="Preferences" customModule="Tekky" customModuleProvider="target">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="507" y="269" width="301" height="347"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="507" y="600" width="360" height="97"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" wantsLayer="YES" id="Kc6-rW-aCU">
-                <rect key="frame" x="0.0" y="0.0" width="301" height="347"/>
+                <rect key="frame" x="0.0" y="0.0" width="360" height="97"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khS-8G-SYO">
-                        <rect key="frame" x="70" y="290" width="211" height="22"/>
+                        <rect key="frame" x="70" y="58" width="270" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="ZRu-DI-WcG">
                             <font key="font" metaFont="system"/>
@@ -39,7 +40,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYV-QS-rsZ">
-                        <rect key="frame" x="18" y="293" width="55" height="17"/>
+                        <rect key="frame" x="18" y="60" width="55" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="API key" id="tBi-Ew-g8H">
                             <font key="font" metaFont="system"/>
@@ -48,7 +49,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdX-61-JE0">
-                        <rect key="frame" x="20" y="252" width="98" height="17"/>
+                        <rect key="frame" x="18" y="22" width="98" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bandwidth limit" id="vdS-y5-xFD">
                             <font key="font" metaFont="system"/>
@@ -57,7 +58,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqh-PC-ljj" userLabel="Bandwidth Field">
-                        <rect key="frame" x="124" y="250" width="42" height="22"/>
+                        <rect key="frame" x="122" y="20" width="42" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="QYr-lj-bQe">
                             <font key="font" metaFont="system"/>
@@ -66,7 +67,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tl8-ZR-Isz">
-                        <rect key="frame" x="167" y="252" width="66" height="17"/>
+                        <rect key="frame" x="170" y="22" width="66" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="GB/month" id="nGh-KE-TZo">
                             <font key="font" metaFont="system"/>
@@ -80,7 +81,7 @@
                 <outlet property="apiField" destination="khS-8G-SYO" id="Ree-2t-SJq"/>
                 <outlet property="bandwidthField" destination="iqh-PC-ljj" id="iSw-x9-glQ"/>
             </connections>
-            <point key="canvasLocation" x="-191.5" y="200.5"/>
+            <point key="canvasLocation" x="-162" y="75.5"/>
         </window>
     </objects>
 </document>
