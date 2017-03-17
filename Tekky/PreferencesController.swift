@@ -42,6 +42,8 @@ class Preferences: NSWindow {
     bandwidthField?.stringValue = getSetting(.bandwidthLimit) as? String ?? ""
 
     bandwidthField?.formatter = DigitOnlyFormatter()
+
+    RequestManager.sharedInstance.getUsage(withKey: (apiField?.stringValue)!)
   }
 
   private func getSetting(_ key: Preferences) -> AnyObject? {
@@ -80,8 +82,8 @@ class Preferences: NSWindow {
 
   private func initializePreferences(atPath plistpath: String) {
     let preferencesDictionary = NSMutableDictionary()
-    preferencesDictionary.setValue(0, forKey: bandwidthLimit.rawValue)
-    preferencesDictionary.setValue("", forKey: apiKey.rawValue)
+    preferencesDictionary.setValue(0, forKey: Preferences.bandwidthLimit.rawValue)
+    preferencesDictionary.setValue("", forKey: Preferences.apiKey.rawValue)
     preferencesDictionary.write(toFile: plistpath, atomically: true)
   }
 }
