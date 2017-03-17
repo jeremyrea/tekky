@@ -67,6 +67,7 @@
 		3F416C181E6C910E0039BCE6 /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 		3F416C1A1E6C917A0039BCE6 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
 		3F63FD251E7B6C5A00CB37AA /* InputTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		3F63FD271E7B729300CB37AA /* Tekky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tekky.entitlements; sourceTree = "<group>"; };
 		3F97C3291E6A6F060030E861 /* Tekky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tekky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F97C32C1E6A6F060030E861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F97C32E1E6A6F060030E861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 		3F97C32B1E6A6F060030E861 /* Tekky */ = {
 			isa = PBXGroup;
 			children = (
+				3F63FD271E7B729300CB37AA /* Tekky.entitlements */,
 				3F97C32C1E6A6F060030E861 /* AppDelegate.swift */,
 				3F416C171E6C90F20039BCE6 /* Controller */,
 				3F63FD241E7B6C3E00CB37AA /* View */,
@@ -242,6 +244,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = XN83SCYFG2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					3F97C3371E6A6F060030E861 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -456,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tekky/Tekky.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XN83SCYFG2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -474,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tekky/Tekky.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XN83SCYFG2;
 				FRAMEWORK_SEARCH_PATHS = (

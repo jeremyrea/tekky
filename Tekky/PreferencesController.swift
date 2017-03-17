@@ -19,11 +19,6 @@ class Preferences: NSWindow {
   @IBOutlet private var apiField: InputTextField?
   @IBOutlet private var bandwidthField: InputTextField?
 
-  override func orderFront(_ sender: Any?) {
-    setup()
-    super.orderFront(sender)
-  }
-
   override func orderOut(_ sender: Any?) {
     saveSetting(.apiKey, withValue: apiField?.stringValue as AnyObject)
     saveSetting(.bandwidthLimit, withValue: bandwidthField?.stringValue as AnyObject)
@@ -32,7 +27,7 @@ class Preferences: NSWindow {
 
   func setup() {
     let fileManager = (FileManager.default)
-    let directories: [String]? = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+    let directories: [String]? = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
     if let unwrap = directories {
       let dictionary = unwrap[0]
       let plistpath = dictionary + ("/" + plistfile)
@@ -48,7 +43,7 @@ class Preferences: NSWindow {
 
   private func getSetting(_ key: Preferences) -> AnyObject? {
     let fileManager = (FileManager.default)
-    let directories = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true) as [String]?
+    let directories = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true) as [String]?
 
     if let unwrap = directories {
       let dictionary = unwrap[0]
@@ -65,7 +60,7 @@ class Preferences: NSWindow {
 
   fileprivate func saveSetting(_ key: Preferences, withValue value: AnyObject) {
     let fileManager = (FileManager.default)
-    let directories: [String]? = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+    let directories: [String]? = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
 
     if let unwrap = directories {
       let dictionary = unwrap[0]

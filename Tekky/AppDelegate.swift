@@ -38,6 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 
   @objc func displayPreferences() {
+    preferences.setup()
     preferences.makeKeyAndOrderFront(preferences)
     NSApp.activate(ignoringOtherApps: true)
   }
