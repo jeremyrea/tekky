@@ -54,7 +54,7 @@ class Preferences: NSWindow {
       let dictionary = unwrap[0]
       let plistpath = dictionary + ("/" + plistfile)
 
-      if fileManager .fileExists(atPath: plistpath) {
+      if fileManager.fileExists(atPath: plistpath) {
         let settingsDictionary = NSMutableDictionary(contentsOfFile: plistpath)
         return settingsDictionary?.value(forKey: key.rawValue) as AnyObject?
       }
@@ -74,7 +74,7 @@ class Preferences: NSWindow {
       let settingsDictionary: NSMutableDictionary = NSMutableDictionary(contentsOfFile: plistpath)!
       settingsDictionary.setValue(value, forKey: key.rawValue)
 
-      if fileManager .fileExists(atPath: plistpath) {
+      if fileManager.fileExists(atPath: plistpath) {
         settingsDictionary.write(toFile: plistpath, atomically: true)
       }
     }
