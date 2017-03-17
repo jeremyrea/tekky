@@ -16,8 +16,8 @@ class Preferences: NSWindow {
 
   private let plistfile = "Preferences.plist"
 
-  @IBOutlet private var apiField: NSTextField?
-  @IBOutlet private var bandwidthField: NSTextField?
+  @IBOutlet private var apiField: InputTextField?
+  @IBOutlet private var bandwidthField: InputTextField?
 
   override func orderFront(_ sender: Any?) {
     setup()
