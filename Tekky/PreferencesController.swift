@@ -37,7 +37,7 @@ class Preferences: NSWindow {
       let dictionary = unwrap[0]
       let plistpath = dictionary + ("/" + plistfile)
 
-      if !fileManager .fileExists(atPath: plistpath) {
+      if !fileManager.fileExists(atPath: plistpath) {
         initializePreferences(atPath: plistpath)
       }
     }
