@@ -43,7 +43,13 @@ class Preferences: NSWindow {
 
     bandwidthField?.formatter = DigitOnlyFormatter()
 
-    RequestManager.sharedInstance.getUsage(withKey: (apiField?.stringValue)!)
+    RequestManager.sharedInstance.getUsage(withKey: (apiField?.stringValue)!) { completionHandler in
+      if let responseObjects = completionHandler {
+        responseObjects.forEach() {
+          Swift.print($0.oid)
+        }
+      }
+    }
   }
 
   private func getSetting(_ key: Preferences) -> AnyObject? {

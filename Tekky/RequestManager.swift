@@ -19,7 +19,7 @@ class RequestManager {
 
   private let SERVER = "https://api.teksavvy.com/web/Usage/UsageSummaryRecords"
 
-  func getUsage(withKey apiKey: String) {
+  func getUsage(withKey apiKey: String, completionHandler: @escaping ([UsageSummaryRecord]?) -> ()) {
     let headers: HTTPHeaders = [
       "TekSavvy-APIKey": apiKey,
     ]
@@ -28,8 +28,15 @@ class RequestManager {
       switch response.result {
       case .success(let value):
         let json = JSON(value)
-        print(json)
+        guard let values = json.dictionaryValue["value"]?.arrayValue else {
+          return
+        }
 
+        let usageSummaryRecords = values.map() {
+          UsageSummaryRecord(withValues: $0)
+        }
+        
+        completionHandler(usageSummaryRecords)
       case .failure(let error):
         print(error)
       }
