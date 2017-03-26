@@ -28,19 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusItem?.title = "Tekky"
     statusItem?.highlightMode = true
 
-    let allowedUsage = Float.init((self.preferences.getSetting(.bandwidthLimit) as? String)!)
-
-    RequestManager.sharedInstance.getUsage(withKey: (preferences.getSetting(.apiKey) as? String ?? "")) { completionHandler in
-      if let responseObjects = completionHandler {
-        let reportedUsage = responseObjects.filter {
-          return $0.isCurrent == true
-          }.first!.onPeakDownload
-        let remainingUsage = allowedUsage! - reportedUsage
-        let usage = "Remaining usage: " + String(format: "%.2f", remainingUsage)
-
-        self.initMenu(withUsage: usage)
-      }
-    }
+    self.initMenu()
   }
 
   func fetchData() {
@@ -65,9 +53,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     timer?.invalidate()
   }
 
-  private func initMenu(withUsage usage: String) {
+  private func initMenu() {
     self.statusMenu = NSMenu()
-    self.statusMenu?.addItem(NSMenuItem(title: usage,
+    self.statusMenu?.addItem(NSMenuItem(title: "",
                                         action: nil,
                                         keyEquivalent: String()))
     self.statusMenu?.addItem(NSMenuItem(title: "Last sync: ",
