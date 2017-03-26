@@ -21,4 +21,15 @@ extension Date {
 
     self.init(timeInterval:0, since:date!)
   }
+
+  func currentTimestamp() -> String {
+    let currentDate = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.timeZone = NSTimeZone(abbreviation: "UTC") as TimeZone!
+
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+    let convertedDate: String = dateFormatter.string(from: currentDate)
+
+    return convertedDate
+  }
 }

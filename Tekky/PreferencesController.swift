@@ -42,17 +42,9 @@ class Preferences: NSWindow {
     bandwidthField?.stringValue = getSetting(.bandwidthLimit) as? String ?? ""
 
     bandwidthField?.formatter = DigitOnlyFormatter()
-
-    RequestManager.sharedInstance.getUsage(withKey: (apiField?.stringValue)!) { completionHandler in
-      if let responseObjects = completionHandler {
-        responseObjects.forEach() {
-          Swift.print($0.oid)
-        }
-      }
-    }
   }
 
-  private func getSetting(_ key: Preferences) -> AnyObject? {
+  func getSetting(_ key: Preferences) -> AnyObject? {
     let fileManager = (FileManager.default)
     let directories = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true) as [String]?
 
