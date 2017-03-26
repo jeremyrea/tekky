@@ -65,6 +65,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     self.statusMenu?.addItem(NSMenuItem(title: "Preferences",
                                         action: #selector(AppDelegate.displayPreferences),
                                         keyEquivalent: ","))
+    self.statusMenu?.addItem(NSMenuItem.separator())
+    self.statusMenu?.addItem(NSMenuItem(title: "Quit",
+                                        action: #selector(AppDelegate.quitApplication),
+                                        keyEquivalent: "q"))
 
     self.statusItem?.menu = self.statusMenu
   }
@@ -83,5 +87,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     preferences.setup()
     preferences.makeKeyAndOrderFront(preferences)
     NSApp.activate(ignoringOtherApps: true)
+  }
+
+  @objc func quitApplication() {
+    NSApplication.shared().terminate(self)
   }
 }
